@@ -1,6 +1,6 @@
 #!/bin/bash
-resource=`az group list --query '[0].name' --output tsv`
-location=`az group list --query '[0].location' --output tsv`
+resource='az group list --query '[0].name' --output tsv'
+location='az group list --query '[0].location' --output tsv'
 
 server=contoso-server-$(openssl rand -hex 5)
 database="Inventory"
